@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f7f1ea" />
+    <meta name="description" content="Samah & Zeyad — an engagement celebration, February 4, 2027." />
+    <title>Samah & Zeyad | Engagement</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-loader" id="welcome">
+      <div class="loader-content">
+        <p class="eyebrow">A new chapter begins</p>
+        <h1>Samah <span>&</span> Zeyad</h1>
+        <p class="loader-date">04 · 02 · 2027</p>
+        <button class="enter-button" id="enterButton">Open invitation <span>↗</span></button>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="#top">S<span>&</span>Z</a>
+      <nav aria-label="Main navigation">
+        <a href="#story">Our story</a>
+        <a href="#details">Details</a>
+        <a href="#rsvp">RSVP</a>
+      </nav>
+      <a class="date-pill" href="#details">04.02.27</a>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Together with their families</p>
+          <h1>We’re getting<br /><em>engaged.</em></h1>
+          <p class="hero-intro">Two hearts, one beautiful beginning.<br />Come celebrate our forever with us.</p>
+          <a class="round-link" href="#details" aria-label="See event details"><span>See<br />details</span><b>↓</b></a>
+        </div>
+        <div class="hero-art reveal">
+          <div class="sun"></div>
+          <div class="arch">
+            <div class="arch-inner"></div>
+          </div>
+          <div class="flower flower-left">✿</div>
+          <div class="flower flower-right">✿</div>
+          <div class="hero-monogram">S <i>&</i> Z</div>
+        </div>
+        <div class="vertical-label">A TIMELESS LOVE STORY</div>
+      </section>
+
+      <section class="date-banner">
+        <p>Save the date</p>
+        <div class="banner-date"><span>Thursday</span><strong>04</strong><span>February<br />2027</span></div>
+        <p>We can’t wait to celebrate with you</p>
+      </section>
+
+      <section class="story section" id="story">
+        <div class="section-label">01 / Our story</div>
+        <div class="story-grid">
+          <div class="story-title">
+            <p class="eyebrow">The beginning of forever</p>
+            <h2>It was always<br /><em>you.</em></h2>
+          </div>
+          <div class="story-copy">
+            <p>Some moments are ordinary. Then there are the ones that change everything. From the first hello to this beautiful yes, every chapter has led us here.</p>
+            <p>Now, surrounded by the people who make our lives complete, we are so excited to begin our next chapter together.</p>
+            <div class="signature">Samah &amp; Zeyad</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="details section" id="details">
+        <div class="section-label">02 / The celebration</div>
+        <div class="details-heading">
+          <p class="eyebrow">Join us as we celebrate</p>
+          <h2>A day to remember,<br /><em>a love to last.</em></h2>
+        </div>
+        <div class="details-grid">
+          <article class="detail-card">
+            <span class="detail-number">01</span>
+            <h3>The engagement</h3>
+            <p>Thursday, February 4th, 2027<br />Seven o’clock in the evening</p>
+          </article>
+          <article class="detail-card highlighted">
+            <span class="detail-number">02</span>
+            <h3>The venue</h3>
+            <p>We’ll be gathering somewhere<br />beautiful. Details to follow soon.</p>
+          </article>
+          <article class="detail-card">
+            <span class="detail-number">03</span>
+            <h3>The dress code</h3>
+            <p>Elegant evening attire<br />Come dressed to celebrate.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="countdown-section">
+        <div class="section-label">03 / Counting down</div>
+        <h2>Until our <em>yes.</em></h2>
+        <div class="countdown" aria-label="Countdown to the engagement">
+          <div><strong id="days">000</strong><span>Days</span></div>
+          <i>:</i>
+          <div><strong id="hours">00</strong><span>Hours</span></div>
+          <i>:</i>
+          <div><strong id="minutes">00</strong><span>Minutes</span></div>
+          <i>:</i>
+          <div><strong id="seconds">00</strong><span>Seconds</span></div>
+        </div>
+      </section>
+
+      <section class="rsvp section" id="rsvp">
+        <div class="rsvp-card">
+          <p class="eyebrow">Your presence means the world</p>
+          <h2>Will you join<br /><em>our celebration?</em></h2>
+          <p class="rsvp-copy">Please let us know if you’ll be there to share this special day with us.</p>
+          <form id="rsvpForm">
+            <label>
+              Your name
+              <input type="text" name="name" placeholder="Enter your name" required />
+            </label>
+            <label>
+              Will you be joining us?
+              <select name="attendance" required>
+                <option value="" disabled selected>Select an option</option>
+                <option>Joyfully accepts</option>
+                <option>Regretfully declines</option>
+              </select>
+            </label>
+            <button type="submit" class="submit-button">Send RSVP <span>↗</span></button>
+            <p class="form-message" id="formMessage" role="status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="brand">S<span>&</span>Z</div>
+      <p>Made with love for our favorite people.</p>
+      <p>04 · 02 · 2027</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
